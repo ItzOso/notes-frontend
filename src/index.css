@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+    .container {
+        @apply max-w-[1535px] xl:max-w-[1200px] lg:max-w-[992px] md:max-w-[768px] sm:max-w-[576px];
+    }
+}
+
+@layer components {}
+@layer utilities {}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.ql-toolbar, .ql-container {
+    padding: 12px;
+    border: none !important;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ecedf0;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d4d4d7;
+}
